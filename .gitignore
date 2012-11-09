@@ -4,3 +4,14 @@ obj
 
 # mstest test results
 TestResults
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# NuGet Packages Directory
+[Pp]ackages/
+
+~$*
+*.exe
