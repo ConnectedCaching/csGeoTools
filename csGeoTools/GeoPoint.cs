@@ -74,7 +74,7 @@ namespace csGeoTools
         public String AsDd(CultureInfo culture)
         {
             string decimalFormat = "#.######"; // 6 decimal places = ~11cm precision
-            return String.Format("%s, %s", 
+            return String.Format("{0}, {1}", 
                 Latitude.ToString(decimalFormat, culture.NumberFormat), 
                 Longitude.ToString(decimalFormat,culture.NumberFormat));
         }
@@ -87,7 +87,7 @@ namespace csGeoTools
             coordinate = fractionalPart * 60;
 
             string minuteFormat = "00.000";
-            return String.Format("%s° %s", 
+            return String.Format("{0}° {1}", 
                 degrees.ToString(degreeFormatPattern, culture.NumberFormat), 
                 coordinate.ToString(minuteFormat, culture.NumberFormat));
         }
@@ -101,7 +101,7 @@ namespace csGeoTools
         {
             String latitudeDirection = Latitude > 0 ? "N" : "S";
             String longitudeDirection = Longitude > 0 ? "E" : "W";
-            return String.Format("%s%s %s%s",
+            return String.Format("{0}{1} {2}{3}",
                 Latitude != 0 ? latitudeDirection : "", decimalToDm(Latitude, "00", culture),
                 Longitude != 0 ? longitudeDirection : "", decimalToDm(Longitude, "000", culture));
         }
@@ -115,8 +115,8 @@ namespace csGeoTools
             fractionalPart = coordinate % 1;
             String minutes = ((int)coordinate).ToString();
             coordinate = fractionalPart * 60;
-            string decimalFormat = "#.###";
-            return String.Format("%s° %s' %s\"", degrees, minutes, coordinate.ToString(decimalFormat, culture.NumberFormat));
+            string decimalFormat = "0.###";
+            return String.Format("{0}° {1}' {2}\"", degrees, minutes, coordinate.ToString(decimalFormat, culture.NumberFormat));
         }
         
         public String AsDms()
@@ -128,7 +128,7 @@ namespace csGeoTools
         {
             String latitudeDirection = Latitude > 0 ? "N" : "S";
             String longitudeDirection = Longitude > 0 ? "E" : "W";
-            return String.Format("%s%s %s%s",
+            return String.Format("{0}{1} {2}{3}",
                 Latitude != 0 ? latitudeDirection : "", decimalToDms(Latitude, culture),
                 Longitude != 0 ? longitudeDirection : "", decimalToDms(Longitude, culture));
         }
