@@ -175,7 +175,7 @@ namespace csGeoTools
         override public bool Equals(Object other)
         {
             if (other == this) { return true; }
-            if (!(other.GetType().Equals(typeof(GeoPoint)))) { return false; }
+            if (!(other.GetType().Equals(this.GetType()))) { return false; }
             GeoPoint d = (GeoPoint) other;
             return this.ReferenceEllipsoid.Equals(d.ReferenceEllipsoid)
                 && this.Latitude.Equals(d.Latitude) && this.Longitude.Equals(d.Longitude);

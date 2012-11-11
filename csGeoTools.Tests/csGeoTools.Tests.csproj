@@ -54,6 +54,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BearingTest.cs" />
+    <Compile Include="DistanceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

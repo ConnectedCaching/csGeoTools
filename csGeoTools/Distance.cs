@@ -84,7 +84,7 @@ namespace csGeoTools
         override public bool Equals(Object other)
         {
             if (other == this) { return true; }
-            if (!(other.GetType().Equals(typeof(Distance)))) { return false; }
+            if (!(other.GetType().Equals(this.GetType()))) { return false; }
             return this.GetDistanceInMeters().Equals(((Distance) other).GetDistanceInMeters());
         }
     }
