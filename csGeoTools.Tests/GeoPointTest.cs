@@ -25,10 +25,10 @@ namespace csGeoTools.Tests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(System.InvalidOperationException))]
         public void Parse_ThrowsException_GivenGarbageInput()
         {
-            // how to test for exceptions?
-            Assert.IsInstanceOfType(GeoPoint.Parse("Foobaz"), typeof(Exception));
+            GeoPoint.Parse("Foobaz");
         }
 
         [TestMethod]
@@ -172,10 +172,10 @@ namespace csGeoTools.Tests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(NotImplementedException))]
         public void Convert_ThrowsAnException_GivenUnsupportedInputs()
         {
-            // how to test for exceptions?
-            Assert.IsInstanceOfType(GeoPoint.Parse(0.0, 0.0).ConvertTo(Ellipsoid.GRS80), typeof(NotImplementedException));
+            GeoPoint.Parse(0.0, 0.0).ConvertTo(Ellipsoid.GRS80);
         }
     }
 }
