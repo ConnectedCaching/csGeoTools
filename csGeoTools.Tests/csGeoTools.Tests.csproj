@@ -57,6 +57,7 @@
     <Compile Include="DistanceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GeoPointTest.cs" />
+    <Compile Include="ProjectionTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\csGeoTools\csGeoTools.csproj">
