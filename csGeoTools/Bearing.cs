@@ -39,7 +39,7 @@ namespace csGeoTools
             return GetBearingInDecimalDegrees();
         }
         
-        public Double radians()
+        public Double Radians()
         {
             return (Math.PI * (GetBearingInDecimalDegrees() / 180.0));
         }

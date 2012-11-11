@@ -26,9 +26,9 @@ namespace csGeoTools
             
             Double latitude = Math.Asin(Math.Sin(from.LatitudeRadians) *
                 Math.Cos(dR) + Math.Cos(from.LatitudeRadians) *
-                Math.Sin(dR) * Math.Cos(bearing.radians()));
+                Math.Sin(dR) * Math.Cos(bearing.Radians()));
             
-            Double longitude = from.LongitudeRadians + Math.Atan2(Math.Sin(bearing.radians()) *
+            Double longitude = from.LongitudeRadians + Math.Atan2(Math.Sin(bearing.Radians()) *
                 Math.Sin(dR) * Math.Cos(from.LatitudeRadians),
 				Math.Cos(dR) - Math.Sin(from.LatitudeRadians) *
                 Math.Sin(latitude));
