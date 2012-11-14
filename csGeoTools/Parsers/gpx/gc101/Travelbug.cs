@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 namespace csGeoTools.Parsers.gpx.gc101
 {
     [XmlTypeAttribute(Namespace = "http://www.groundspeak.com/cache/1/0/1")]
-    class Travelbug
+    public class Travelbug
     {
         public String Name { get; set; }
         [XmlAttributeAttribute("id")]

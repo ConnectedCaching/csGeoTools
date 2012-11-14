@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 namespace csGeoTools.Parsers.gpx.gpx10
 {
     [XmlTypeAttribute(Namespace = "http://www.topografix.com/GPX/1/0")]
-    class Bounds
+    public class Bounds
     {
         [XmlAttributeAttribute("minlat")]
         public decimal MinLatitude { get; set; }
