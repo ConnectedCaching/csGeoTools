@@ -47,7 +47,7 @@ namespace csGeoTools
         override public bool Equals(Object other)
         {
             if (other == this) { return true; }
-            if (!(other.GetType().Equals(this.GetType()))) { return false; }
+            if (!(other.GetType().BaseType.Equals(typeof(Bearing)))) { return false; }
             return this.GetBearingInDecimalDegrees().Equals(((Bearing) other).GetBearingInDecimalDegrees());
         }
 
