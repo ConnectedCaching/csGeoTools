@@ -1,5 +1,7 @@
-﻿using System;
+﻿using csGeoTools.Parsers.gpx.gc101;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
@@ -11,21 +13,23 @@ namespace csGeoTools.Parsers.gpx.gpx10
     {
         [XmlElementAttribute("ele")]
         public decimal Elevation { get; set; }
-        //[XmlIgnoreAttribute()]
-        //public bool eleSpecified { get; set; }
         [XmlElementAttribute("time")]
-        public DateTime Time { get; set; }
-        //[System.Xml.Serialization.XmlIgnoreAttribute()]
-        //public bool timeSpecified { get; set; }
+        public String _time { get; set; }
+        public DateTime Time
+        {
+            get
+            {
+                return DateTime.ParseExact(_time, "yyyy-MM-dd HH':'mm':'ss 'GMT'", CultureInfo.InvariantCulture);
+            }
+            set
+            {
+                _time = value.ToString("yyyy-MM-dd HH':'mm':'ss 'GMT'");
+            }
+        }
         [XmlElementAttribute("magvar")]
         public decimal Magvar { get; set; }
-        //[XmlIgnoreAttribute()]
-        //public bool magvarSpecified { get; set; }
         [XmlElementAttribute("geoidheight")]
         public decimal GeoIdHeight { get; set; }
-        //[System.Xml.Serialization.XmlIgnoreAttribute()]
-        //public bool geoidheightSpecified { get; set; }
-
         [XmlElementAttribute("name")]
         public String Name { get; set; }
         [XmlElementAttribute("cmt")]
@@ -34,7 +38,7 @@ namespace csGeoTools.Parsers.gpx.gpx10
         public String Description { get; set; }
         [XmlElementAttribute("src")]
         public String Source { get; set; }
-        [XmlElementAttribute("url")]                        // , DataType = "anyURI"
+        [XmlElementAttribute("url")]
         public String Url { get; set; }
         [XmlElementAttribute("urlname")]
         public String Urlname { get; set; }
@@ -42,33 +46,22 @@ namespace csGeoTools.Parsers.gpx.gpx10
         public String Sym { get; set; }
         [XmlElementAttribute("type")]
         public String Type { get; set; }
-
         [XmlElementAttribute("fix")]
         public FixType Fix { get; set; }
-        //[System.Xml.Serialization.XmlIgnoreAttribute()]
-        //public bool fixSpecified { get; set; }
-        [XmlElementAttribute("sat")]                        // , DataType = "nonNegativeInteger"
+        [XmlElementAttribute("sat")]
         public int Satellite { get; set; }
         [XmlElementAttribute("hdop")]
         public decimal HorizontalDop { get; set; }
-        //[System.Xml.Serialization.XmlIgnoreAttribute()]
-        //public bool hdopSpecified { get; set; }
         [XmlElementAttribute("vdop")]
         public decimal VerticalDop { get; set; }
-        //[System.Xml.Serialization.XmlIgnoreAttribute()]
-        //public bool vdopSpecified { get; set; }
         [XmlElementAttribute("pdop")]
         public decimal PDop { get; set; }
-        //[System.Xml.Serialization.XmlIgnoreAttribute()]
-        //public bool pdopSpecified { get; set; }
         [XmlElementAttribute("ageofdgpsdata")]
         public decimal AgeOfDGpsData { get; set; }
-        //[System.Xml.Serialization.XmlIgnoreAttribute()]
-        //public bool ageofdgpsdataSpecified { get; set; }
-        [XmlElementAttribute("dgpsid")]                     // , DataType = "integer"
+        [XmlElementAttribute("dgpsid")]
         public int DifferentialGpsId { get; set; }
-        //[System.Xml.Serialization.XmlAnyElementAttribute()]
-        //public System.Xml.XmlElement[] Any { get; set; }
+        [XmlElementAttribute("cache")]
+        public Cache Cache { get; set; }
         [XmlAttributeAttribute("lat")]
         public decimal Latitude { get; set; }
         [XmlAttributeAttribute("lon")]

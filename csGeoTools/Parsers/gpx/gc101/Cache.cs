@@ -7,7 +7,6 @@ using System.Xml.Serialization;
 namespace csGeoTools.Parsers.gpx.gc101
 {
     [XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.groundspeak.com/cache/1/0/1")]
-    [XmlRootAttribute(Namespace = "http://www.groundspeak.com/cache/1/0/1")]
     public class Cache
     {
         [XmlElementAttribute("name")]

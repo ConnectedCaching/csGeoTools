@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
@@ -7,7 +8,7 @@ using System.Xml.Serialization;
 namespace csGeoTools.Parsers.gpx.gpx10
 {
     [XmlTypeAttribute(Namespace = "http://www.topografix.com/GPX/1/0")]
-    [XmlRootAttribute(Namespace = "http://www.topografix.com/GPX/1/0")]
+    [XmlRootAttribute(ElementName="gpx", Namespace = "http://www.topografix.com/GPX/1/0")]
     public class Gpx
     {
         [XmlElementAttribute("name")]
@@ -23,9 +24,18 @@ namespace csGeoTools.Parsers.gpx.gpx10
         [XmlElementAttribute("urlname")]
         public String Urlname { get; set; }
         [XmlElementAttribute("time")]
-        public DateTime Time { get; set; }
-        //[XmlIgnoreAttribute()]
-        //public bool timeFieldSpecified { get; set; }
+        public String _time { get; set; }
+        public DateTime Time
+        {
+            get
+            {
+                return DateTime.ParseExact(_time, "yyyy-MM-dd HH':'mm':'ss 'GMT'", CultureInfo.InvariantCulture);
+            }
+            set
+            {
+                _time = value.ToString("yyyy-MM-dd HH':'mm':'ss 'GMT'");
+            }
+        }
         [XmlElementAttribute("keywords")]
         public String Keywords { get; set; }
         [XmlElementAttribute("bounds")]
@@ -36,13 +46,11 @@ namespace csGeoTools.Parsers.gpx.gpx10
         public Route[] Routes { get; set; }
         [XmlElementAttribute("trk")]
         public Track[] Tracks { get; set; }
-        //[XmlAnyElementAttribute()]
-        //private XmlElement[] anyField;
         [XmlAttributeAttribute("version")]
         public String Version { get; set; }
         [XmlAttributeAttribute("creator")]
         public String Creator { get; set; }
-        
+
         public Gpx()
         {
             this.Version = "1.0";

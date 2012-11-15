@@ -17,16 +17,13 @@ namespace csGeoTools.Parsers.gpx.gpx10
         public string Description { get; set; }
         [XmlElementAttribute("src")]
         public string Source { get; set; }
-        [XmlElementAttribute("url")]                        // , DataType = "anyURI"
+        [XmlElementAttribute("url")]
         public string Url { get; set; }
         [XmlElementAttribute("urlname")]
         public string Urlname { get; set; }
-        [XmlElementAttribute("number")]                     // , DataType="nonNegativeInteger"
+        [XmlElementAttribute("number")]
         public int Number { get; set; }
-
-        //[System.Xml.Serialization.XmlAnyElementAttribute()]
-        //public System.Xml.XmlElement[] Any { get; set; }
         [XmlArrayItemAttribute("trkpt", typeof(Trackpoint))]
-        public Trackpoint[][] TrackSegments { get; set; }
+        public Trackpoint[] TrackSegments { get; set; }
     }
 }

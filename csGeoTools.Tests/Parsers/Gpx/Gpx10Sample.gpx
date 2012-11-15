@@ -1,0 +1,320 @@
+<?xml version="1.0" standalone="yes"?>
+<gpx
+ version="1.0"
+ creator="ExpertGPS 1.1.1 - http://www.topografix.com"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.topografix.com/GPX/1/0"
+ xmlns:topografix="http://www.topografix.com/GPX/Private/TopoGrafix/0/2"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/2 http://www.topografix.com/GPX/Private/TopoGrafix/0/2/topografix.xsd">
+  <name><![CDATA[Blue Hills Reservation]]></name>
+  <desc>
+	<![CDATA[Riding in the Blue Hills is a mix of fast fire roads and technical rock gardens.  Oh, and there's a hill around every corner, too.
+Watch out for horses on the fire roads, and pick up a mountain bike trail map at the Headquarters trailhead.   rails marked in red are off-limits to bikes.  Every intersection in the Blue Hills is marked with a 4 digit number, shown on the map.
+ he Blue Hills are a great place to hike, as well!]]>
+  </desc>
+  <author><![CDATA[Dan Foster]]></author>
+  <email>trails@topografix.com</email>
+  <url><![CDATA[http://www.nemba.org/ridingzone/p_Blue_Hills_Reservation.html]]></url>
+  <urlname><![CDATA[Blue Hills description at NEMBA]]></urlname>
+  <time>2002-04-19 02:47:17 GMT</time>
+  <keywords><![CDATA[blue hills, mountain biking, milton]]></keywords>
+  <bounds minlat="42.204420" minlon="-71.123630" maxlat="42.228312" maxlon="-71.069634"/>
+  <wpt lat="42.209547" lon="-71.119025">
+	<ele>86.258400</ele>
+	<time>2001-06-24 20:59:47 GMT</time>
+	<name><![CDATA[LOOKOU ]]></name>
+	<desc><![CDATA[Lookout Rock]]></desc>
+	<sym>Summit</sym>
+	<type><![CDATA[rock]]></type>
+  </wpt>
+  <wpt lat="42.218051" lon="-71.112672">
+	<ele>114.041260</ele>
+	<time>2001-10-13 23:50:58 GMT</time>
+	<name><![CDATA[1072]]></name>
+	<desc><![CDATA[1072]]></desc>
+	<sym>Dot</sym>
+	<type><![CDATA[Dot]]></type>
+  </wpt>
+  <wpt lat="42.208834" lon="-71.107853">
+	<ele>91.744800</ele>
+	<time>2001-06-24 20:59:47 GMT</time>
+	<name><![CDATA[1081]]></name>
+	<desc><![CDATA[1081]]></desc>
+	<sym>Dot</sym>
+	<type><![CDATA[Dot]]></type>
+  </wpt>
+  <wpt lat="42.215053" lon="-71.109739">
+	<ele>143.256000</ele>
+	<time>2001-05-26 21:52:38 GMT</time>
+	<name><![CDATA[1082]]></name>
+	<desc><![CDATA[1082]]></desc>
+	<sym>Dot</sym>
+	<type><![CDATA[Dot]]></type>
+  </wpt>
+  <wpt lat="42.219810" lon="-71.112492">
+	<name><![CDATA[1085]]></name>
+	<desc><![CDATA[1085]]></desc>
+	<sym>Dot</sym>
+  </wpt>
+  <wpt lat="42.219598" lon="-71.110304">
+	<name><![CDATA[1100]]></name>
+	<desc><![CDATA[1100]]></desc>
+	<sym>Dot</sym>
+  </wpt>
+  <wpt lat="42.216088" lon="-71.107977">
+	<ele>155.752800</ele>
+	<time>2001-05-26 21:52:38 GMT</time>
+	<name><![CDATA[1103]]></name>
+	<desc><![CDATA[1103]]></desc>
+	<sym>Dot</sym>
+	<type><![CDATA[Dot]]></type>
+  </wpt>
+  <wpt lat="42.211321" lon="-71.104800">
+	<ele>90.525600</ele>
+	<time>2001-06-24 20:59:48 GMT</time>
+	<name><![CDATA[1110]]></name>
+	<desc><![CDATA[1110]]></desc>
+	<sym>Dot</sym>
+	<type><![CDATA[Dot]]></type>
+  </wpt>
+  <wpt lat="42.221506" lon="-71.108347">
+	<ele>82.296000</ele>
+	<time>2001-05-26 21:52:38 GMT</time>
+	<name><![CDATA[1114]]></name>
+	<desc><![CDATA[1114]]></desc>
+	<sym>Dot</sym>
+	<type><![CDATA[Dot]]></type>
+  </wpt>
+  <wpt lat="42.222848" lon="-71.105258">
+	<ele>67.177368</ele>
+	<time>2001-10-13 23:50:58 GMT</time>
+	<name><![CDATA[1135]]></name>
+	<desc><![CDATA[1135]]></desc>
+	<sym>Dot</sym>
+	<type><![CDATA[Dot]]></type>
+  </wpt>
+  <wpt lat="42.220552" lon="-71.104257">
+	<ele>113.385600</ele>
+	<time>2001-05-26 21:52:37 GMT</time>
+	<name><![CDATA[1140 LOGS]]></name>
+	<desc><![CDATA[1140 -  he log pyramid]]></desc>
+	<sym>Danger Area</sym>
+	<type><![CDATA[Danger Area]]></type>
+  </wpt>
+  <wpt lat="42.217001" lon="-71.102706">
+	<ele>88.696800</ele>
+	<time>2001-06-24 20:59:47 GMT</time>
+	<name><![CDATA[1141]]></name>
+	<desc><![CDATA[1141]]></desc>
+	<sym>Dot</sym>
+	<type><![CDATA[Dot]]></type>
+  </wpt>
+  <wpt lat="42.225669" lon="-71.098855">
+	<ele>85.039200</ele>
+	<time>2001-05-26 21:52:38 GMT</time>
+	<name><![CDATA[1175]]></name>
+	<desc><![CDATA[1175]]></desc>
+	<sym>Dot</sym>
+	<type><![CDATA[Dot]]></type>
+  </wpt>
+  <wpt lat="42.223768" lon="-71.097067">
+	<name><![CDATA[1183]]></name>
+	<desc><![CDATA[1183]]></desc>
+	<sym>Dot</sym>
+  </wpt>
+  <wpt lat="42.211362" lon="-71.114709">
+	<ele>187.452000</ele>
+	<time>2001-05-26 21:52:37 GMT</time>
+	<name><![CDATA[SUMMI ]]></name>
+	<desc><![CDATA[Summit]]></desc>
+	<sym> all  ower</sym>
+	<type><![CDATA[Dot]]></type>
+  </wpt>
+  <wpt lat="42.216817" lon="-71.113374">
+	<ele>141.122400</ele>
+	<time>2001-05-26 21:52:37 GMT</time>
+	<name><![CDATA[SUMMI ROAD]]></name>
+	<desc><![CDATA[Summit Road]]></desc>
+	<sym> ruck Stop</sym>
+	<type><![CDATA[ ruck Stop]]></type>
+  </wpt>
+  <wpt lat="42.213040" lon="-71.086400">
+	<ele>134.112000</ele>
+	<time>2001-05-26 21:53:33 GMT</time>
+	<name><![CDATA[ UCKER]]></name>
+	<desc><![CDATA[ ucker Hill]]></desc>
+	<sym>Summit</sym>
+	<type><![CDATA[Summit]]></type>
+  </wpt>
+  <trk>
+	<name><![CDATA[BIG LOOP]]></name>
+	<desc><![CDATA[Big loop around the base of Great Blue Hill]]></desc>
+	<number>3</number>
+	<topografix:color>00ffff</topografix:color>
+	<trkseg>
+	  <trkpt lat="42.210009" lon="-71.096220">
+		<ele>61.569600</ele>
+		<time>2001-06-24 15:09:09 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:08:39 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.210031" lon="-71.096220">
+		<ele>61.569600</ele>
+		<time>2001-06-24 15:09:29 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:08:59 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.210052" lon="-71.096284">
+		<ele>62.484000</ele>
+		<time>2001-06-24 15:16:04 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:15:34 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.210052" lon="-71.096284">
+		<ele>62.484000</ele>
+		<time>2001-06-24 15:16:07 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:15:37 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.209966" lon="-71.096349">
+		<ele>60.655200</ele>
+		<time>2001-06-24 15:16:26 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:15:56 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.209709" lon="-71.096456">
+		<ele>59.436000</ele>
+		<time>2001-06-24 15:16:41 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:16:11 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.209537" lon="-71.096520">
+		<ele>59.436000</ele>
+		<time>2001-06-24 15:16:51 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:16:21 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.209344" lon="-71.096542">
+		<ele>59.131200</ele>
+		<time>2001-06-24 15:16:59 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:16:29 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.209044" lon="-71.096606">
+		<ele>57.607200</ele>
+		<time>2001-06-24 15:17:15 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:16:45 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.207005" lon="-71.091049">
+		<ele>55.778400</ele>
+		<time>2001-06-24 15:31:32 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:31:02 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.207069" lon="-71.090105">
+		<ele>55.778400</ele>
+		<time>2001-06-24 15:31:48 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:31:18 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.207134" lon="-71.089504">
+		<ele>56.083200</ele>
+		<time>2001-06-24 15:31:58 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:31:28 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.207391" lon="-71.089332">
+		<ele>57.302400</ele>
+		<time>2001-06-24 15:32:12 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:31:42 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.207477" lon="-71.089354">
+		<ele>60.655200</ele>
+		<time>2001-06-24 15:32:20 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:31:50 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.212412" lon="-71.084526">
+		<ele>78.943200</ele>
+		<time>2001-06-24 15:39:01 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:38:31 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	</trkseg>
+	<trkseg>
+	  <trkpt lat="42.212455" lon="-71.084590">
+		<ele>78.943200</ele>
+		<time>2001-06-24 15:39:03 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:38:33 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.215610" lon="-71.084526">
+		<ele>78.943200</ele>
+		<time>2001-06-24 15:39:58 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:39:28 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.215953" lon="-71.084697">
+		<ele>78.943200</ele>
+		<time>2001-06-24 15:40:07 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:39:37 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.216511" lon="-71.084332">
+		<ele>78.333600</ele>
+		<time>2001-06-24 15:40:15 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:39:45 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.216640" lon="-71.084311">
+		<ele>87.477600</ele>
+		<time>2001-06-24 15:40:29 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:39:59 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.216940" lon="-71.083817">
+		<ele>89.916000</ele>
+		<time>2001-06-24 15:40:46 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:40:16 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.217155" lon="-71.083088">
+		<ele>86.563200</ele>
+		<time>2001-06-24 15:41:23 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:40:53 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.217176" lon="-71.082830">
+		<ele>87.477600</ele>
+		<time>2001-06-24 15:41:47 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 15:41:17 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.219579" lon="-71.110425">
+		<ele>117.348000</ele>
+		<time>2001-06-24 16:10:52 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 16:10:20 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	  <trkpt lat="42.219601" lon="-71.110468">
+		<ele>117.348000</ele>
+		<time>2001-06-24 16:10:56 GMT</time>
+		<cmt><![CDATA[Sun Jun 24 16:10:24 2001]]></cmt>
+		<sym>Dot</sym>
+	  </trkpt>
+	</trkseg>
+  </trk>
+  <topografix:active_point lat="42.210180" lon="-71.096281"/>
+  <topografix:map url="blue_hills_trail_map.jpg">
+	<topografix:name>Blue Hills Mtn Bike  rails</topografix:name>
+	<topografix:width>940</topografix:width>
+	<topografix:height>600</topografix:height>
+	<topografix:mappt lat="42.228475501" lon="-71.120628643" x="1.0" y="1.0"/>
+	<topografix:mappt lat="42.228338019" lon="-71.064200124" x="939.0" y="1.0"/>
+	<topografix:mappt lat="42.201942738" lon="-71.120819073" x="1.0" y="599.0"/>
+	<topografix:forward a="0.000060158" b="-0.000000318" c="-71.120688483" d="-0.000000147" e="-0.000044369" f="42.228520017" />
+	<topografix:inverse a="16622.509586967" b="-119.302482771" c="1187242.293420310" d="-54.910867046" e="-22537.778795357" f="947831.744323020" />
+  </topografix:map>
+</gpx>
