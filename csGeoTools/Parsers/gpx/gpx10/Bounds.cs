@@ -9,13 +9,13 @@ namespace csGeoTools.Parsers.gpx.gpx10
     [XmlTypeAttribute(Namespace = "http://www.topografix.com/GPX/1/0")]
     public class Bounds
     {
-        [XmlAttributeAttribute("minlat")]
+        [XmlAttribute("minlat")]
         public decimal MinLatitude { get; set; }
-        [XmlAttributeAttribute("minlon")]
+        [XmlAttribute("minlon")]
         public decimal MinLongitude { get; set; }
-        [XmlAttributeAttribute("maxlat")]
+        [XmlAttribute("maxlat")]
         public decimal MaxLatitude { get; set; }
-        [XmlAttributeAttribute("maxlon")]
+        [XmlAttribute("maxlon")]
         public decimal MaxLongitude { get; set; }
     }
 }

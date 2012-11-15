@@ -11,19 +11,19 @@ namespace csGeoTools.Parsers.gpx.gpx10
     [XmlRootAttribute(ElementName="gpx", Namespace = "http://www.topografix.com/GPX/1/0")]
     public class Gpx
     {
-        [XmlElementAttribute("name")]
+        [XmlElement("name")]
         public String Name { get; set; }
-        [XmlElementAttribute("desc")]
+        [XmlElement("desc")]
         public String Description { get; set; }
-        [XmlElementAttribute("author")]
+        [XmlElement("author")]
         public String Author { get; set; }
-        [XmlElementAttribute("email")]
+        [XmlElement("email")]
         public String Emailadress { get; set; }
-        [XmlElementAttribute(DataType = "anyURI")]
+        [XmlElement(DataType = "anyURI")]
         public String Url { get; set; }
-        [XmlElementAttribute("urlname")]
+        [XmlElement("urlname")]
         public String Urlname { get; set; }
-        [XmlElementAttribute("time")]
+        [XmlElement("time")]
         public String _time { get; set; }
         public DateTime Time
         {
@@ -36,19 +36,19 @@ namespace csGeoTools.Parsers.gpx.gpx10
                 _time = value.ToString("yyyy-MM-dd HH':'mm':'ss 'GMT'");
             }
         }
-        [XmlElementAttribute("keywords")]
+        [XmlElement("keywords")]
         public String Keywords { get; set; }
-        [XmlElementAttribute("bounds")]
+        [XmlElement("bounds")]
         public Bounds Bounds { get; set; }
-        [XmlElementAttribute("wpt")]
+        [XmlElement("wpt")]
         public Waypoint[] Waypoints { get; set; }
-        [XmlElementAttribute("rte")]
+        [XmlElement("rte")]
         public Route[] Routes { get; set; }
-        [XmlElementAttribute("trk")]
+        [XmlElement("trk")]
         public Track[] Tracks { get; set; }
-        [XmlAttributeAttribute("version")]
+        [XmlAttribute("version")]
         public String Version { get; set; }
-        [XmlAttributeAttribute("creator")]
+        [XmlAttribute("creator")]
         public String Creator { get; set; }
 
         public Gpx()

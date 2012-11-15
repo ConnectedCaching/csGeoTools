@@ -9,7 +9,7 @@ namespace csGeoTools.Parsers.gpx.gc101
     [XmlTypeAttribute(Namespace = "http://www.groundspeak.com/cache/1/0/1")]
     public class Description
     {
-        [XmlAttributeAttribute("html")]
+        [XmlAttribute("html")]
         public String _html { get; set; }
         public bool Html
         {

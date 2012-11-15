@@ -11,7 +11,7 @@ namespace csGeoTools.Parsers.gpx.gc101
     {
         [XmlTextAttribute()]
         public String Name { get; set; }
-        [XmlAttributeAttribute("id")]
+        [XmlAttribute("id")]
         public String Id { get; set; }
     }
 }

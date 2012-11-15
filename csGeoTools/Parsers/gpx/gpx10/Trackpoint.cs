@@ -9,72 +9,72 @@ namespace csGeoTools.Parsers.gpx.gpx10
     [XmlTypeAttribute(Namespace = "http://www.topografix.com/GPX/1/0")]
     public class Trackpoint
     {
-        [XmlElementAttribute("ele")]
+        [XmlElement("ele")]
         public decimal Elevation { get; set; }
         //[XmlIgnoreAttribute()]
         //public bool eleSpecified { get; set; }
-        [XmlElementAttribute("time")]
+        [XmlElement("time")]
         public DateTime Time { get; set; }
         //[System.Xml.Serialization.XmlIgnoreAttribute()]
         //public bool timeSpecified { get; set; }
-        [XmlElementAttribute("course")]
+        [XmlElement("course")]
         public decimal Course { get; set; }
-        [XmlElementAttribute("speed")]
+        [XmlElement("speed")]
         public decimal Speed { get; set; }
-        [XmlElementAttribute("magvar")]
+        [XmlElement("magvar")]
         public decimal Magvar { get; set; }
         //[XmlIgnoreAttribute()]
         //public bool magvarSpecified { get; set; }
-        [XmlElementAttribute("geoidheight")]
+        [XmlElement("geoidheight")]
         public decimal GeoIdHeight { get; set; }
         //[System.Xml.Serialization.XmlIgnoreAttribute()]
         //public bool geoidheightSpecified { get; set; }
 
-        [XmlElementAttribute("name")]
+        [XmlElement("name")]
         public String Name { get; set; }
-        [XmlElementAttribute("cmt")]
+        [XmlElement("cmt")]
         public String Comment { get; set; }
-        [XmlElementAttribute("desc")]
+        [XmlElement("desc")]
         public String Description { get; set; }
-        [XmlElementAttribute("src")]
+        [XmlElement("src")]
         public String Source { get; set; }
-        [XmlElementAttribute("url")]                        // , DataType = "anyURI"
+        [XmlElement("url")]                        // , DataType = "anyURI"
         public String Url { get; set; }
-        [XmlElementAttribute("urlname")]
+        [XmlElement("urlname")]
         public String Urlname { get; set; }
-        [XmlElementAttribute("sym")]
+        [XmlElement("sym")]
         public String Sym { get; set; }
-        [XmlElementAttribute("type")]
+        [XmlElement("type")]
         public String Type { get; set; }
-        [XmlElementAttribute("fix")]
+        [XmlElement("fix")]
         public FixType Fix { get; set; }
         //[System.Xml.Serialization.XmlIgnoreAttribute()]
         //public bool fixSpecified { get; set; }
-        [XmlElementAttribute("sat")]                        // , DataType = "nonNegativeInteger"
+        [XmlElement("sat")]                        // , DataType = "nonNegativeInteger"
         public int Satellite { get; set; }
-        [XmlElementAttribute("hdop")]
+        [XmlElement("hdop")]
         public decimal HorizontalDop { get; set; }
         //[System.Xml.Serialization.XmlIgnoreAttribute()]
         //public bool hdopSpecified { get; set; }
-        [XmlElementAttribute("vdop")]
+        [XmlElement("vdop")]
         public decimal VerticalDop { get; set; }
         //[System.Xml.Serialization.XmlIgnoreAttribute()]
         //public bool vdopSpecified { get; set; }
-        [XmlElementAttribute("pdop")]
+        [XmlElement("pdop")]
         public decimal PDop { get; set; }
         //[System.Xml.Serialization.XmlIgnoreAttribute()]
         //public bool pdopSpecified { get; set; }
-        [XmlElementAttribute("ageofdgpsdata")]
+        [XmlElement("ageofdgpsdata")]
         public decimal AgeOfDGpsData { get; set; }
         //[System.Xml.Serialization.XmlIgnoreAttribute()]
         //public bool ageofdgpsdataSpecified { get; set; }
-        [XmlElementAttribute("dgpsid")]                     // , DataType = "integer"
+        [XmlElement("dgpsid")]                     // , DataType = "integer"
         public int DifferentialGpsId { get; set; }
         //[System.Xml.Serialization.XmlAnyElementAttribute()]
         //public System.Xml.XmlElement[] Any { get; set; }
-        [XmlAttributeAttribute("lat")]
+        [XmlAttribute("lat")]
         public decimal Latitude { get; set; }
-        [XmlAttributeAttribute("lon")]
+        [XmlAttribute("lon")]
         public decimal Longitude { get; set; }
     }
 }

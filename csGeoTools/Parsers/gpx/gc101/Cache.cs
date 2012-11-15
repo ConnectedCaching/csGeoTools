@@ -6,42 +6,42 @@ using System.Xml.Serialization;
 
 namespace csGeoTools.Parsers.gpx.gc101
 {
-    [XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.groundspeak.com/cache/1/0/1")]
+    [XmlTypeAttribute(Namespace = "http://www.groundspeak.com/cache/1/0/1")]
     public class Cache
     {
-        [XmlElementAttribute("name")]
+        [XmlElement("name")]
         public String Name { get; set; }
-        [XmlElementAttribute("placed_by")]
+        [XmlElement("placed_by")]
         public String PlacedBy { get; set; }
-        [XmlElementAttribute("owner")]
+        [XmlElement("owner")]
         public User[] Owner;
-        [XmlElementAttribute("type")]
+        [XmlElement("type")]
         public String Type { get; set; }
-        [XmlElementAttribute("container")]
+        [XmlElement("container")]
         public String Container { get; set; }
-        [XmlArrayItemAttribute("attribute")]
+        [XmlArrayItem("attribute")]
         public Attribute[] attributesField { get; set; }
-        [XmlElementAttribute("difficulty")]
+        [XmlElement("difficulty")]
         public String Difficulty { get; set; }
-        [XmlElementAttribute("terrain")]
+        [XmlElement("terrain")]
         public String Terrain { get; set; }
-        [XmlElementAttribute("country")]
+        [XmlElement("country")]
         public String Country { get; set; }
-        [XmlElementAttribute("state")]
+        [XmlElement("state")]
         public String State { get; set; }
-        [XmlElementAttribute("short_description")]
+        [XmlElement("short_description")]
         public Description[] ShortDescription { get; set; }
-        [XmlElementAttribute("long_description")]
+        [XmlElement("long_description")]
         public Description[] LongDescription { get; set; }
-        [XmlElementAttribute("encoded_hints")]
+        [XmlElement("encoded_hints")]
         public String EncodedHints { get; set; }
-        [XmlArrayItemAttribute("log")]
-        public Log[][] Logs { get; set; }
-        [XmlArrayItemAttribute("travelbug")]
-        public Travelbug[][] Travelbugs { get; set; }
-        [XmlAttributeAttribute("id")]
+        [XmlArrayItem("log")]
+        public Log[] Logs { get; set; }
+        [XmlArrayItem("travelbug")]
+        public Travelbug[] Travelbugs { get; set; }
+        [XmlAttribute("id")]
         public String Id { get; set; }
-        [XmlAttributeAttribute("available")]
+        [XmlAttribute("available")]
         public String _available { get; set; }
         public bool Available
         {
@@ -54,7 +54,7 @@ namespace csGeoTools.Parsers.gpx.gc101
                 _available = value.ToString();
             }
         }
-        [XmlAttributeAttribute("archived")]
+        [XmlAttribute("archived")]
         public string _archived { get; set; }
         public bool Archived
         {

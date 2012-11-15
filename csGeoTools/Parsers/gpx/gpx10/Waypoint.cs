@@ -11,9 +11,9 @@ namespace csGeoTools.Parsers.gpx.gpx10
     [XmlTypeAttribute(Namespace = "http://www.topografix.com/GPX/1/0")]
     public class Waypoint
     {
-        [XmlElementAttribute("ele")]
+        [XmlElement("ele")]
         public decimal Elevation { get; set; }
-        [XmlElementAttribute("time")]
+        [XmlElement("time")]
         public String _time { get; set; }
         public DateTime Time
         {
@@ -26,45 +26,45 @@ namespace csGeoTools.Parsers.gpx.gpx10
                 _time = value.ToString("yyyy-MM-dd HH':'mm':'ss 'GMT'");
             }
         }
-        [XmlElementAttribute("magvar")]
+        [XmlElement("magvar")]
         public decimal Magvar { get; set; }
-        [XmlElementAttribute("geoidheight")]
+        [XmlElement("geoidheight")]
         public decimal GeoIdHeight { get; set; }
-        [XmlElementAttribute("name")]
+        [XmlElement("name")]
         public String Name { get; set; }
-        [XmlElementAttribute("cmt")]
+        [XmlElement("cmt")]
         public String Comment { get; set; }
-        [XmlElementAttribute("desc")]
+        [XmlElement("desc")]
         public String Description { get; set; }
-        [XmlElementAttribute("src")]
+        [XmlElement("src")]
         public String Source { get; set; }
-        [XmlElementAttribute("url")]
+        [XmlElement("url")]
         public String Url { get; set; }
-        [XmlElementAttribute("urlname")]
+        [XmlElement("urlname")]
         public String Urlname { get; set; }
-        [XmlElementAttribute("sym")]
+        [XmlElement("sym")]
         public String Sym { get; set; }
-        [XmlElementAttribute("type")]
+        [XmlElement("type")]
         public String Type { get; set; }
-        [XmlElementAttribute("fix")]
+        [XmlElement("fix")]
         public FixType Fix { get; set; }
-        [XmlElementAttribute("sat")]
+        [XmlElement("sat")]
         public int Satellite { get; set; }
-        [XmlElementAttribute("hdop")]
+        [XmlElement("hdop")]
         public decimal HorizontalDop { get; set; }
-        [XmlElementAttribute("vdop")]
+        [XmlElement("vdop")]
         public decimal VerticalDop { get; set; }
-        [XmlElementAttribute("pdop")]
+        [XmlElement("pdop")]
         public decimal PDop { get; set; }
-        [XmlElementAttribute("ageofdgpsdata")]
+        [XmlElement("ageofdgpsdata")]
         public decimal AgeOfDGpsData { get; set; }
-        [XmlElementAttribute("dgpsid")]
+        [XmlElement("dgpsid")]
         public int DifferentialGpsId { get; set; }
-        [XmlElementAttribute("cache")]
-        public Cache Cache { get; set; }
-        [XmlAttributeAttribute("lat")]
+        [XmlElement("cache", Namespace = "http://www.groundspeak.com/cache/1/0/1")]
+        public Cache[] Cache { get; set; }
+        [XmlAttribute("lat")]
         public decimal Latitude { get; set; }
-        [XmlAttributeAttribute("lon")]
+        [XmlAttribute("lon")]
         public decimal Longitude { get; set; }
     }
 }

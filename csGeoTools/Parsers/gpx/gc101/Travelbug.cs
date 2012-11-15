@@ -10,9 +10,9 @@ namespace csGeoTools.Parsers.gpx.gc101
     public class Travelbug
     {
         public String Name { get; set; }
-        [XmlAttributeAttribute("id")]
+        [XmlAttribute("id")]
         public String Id { get; set; }
-        [XmlAttributeAttribute("ref")]
+        [XmlAttribute("ref")]
         public string Ref { get; set; }
     }
 }
