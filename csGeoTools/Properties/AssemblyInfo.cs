@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
 [assembly: AssemblyTitle("csGeoTools")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A set of tools for geocaching related calculations and gpx-file parsing")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("ConnectedCaching")]
 [assembly: AssemblyProduct("csGeoTools")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]

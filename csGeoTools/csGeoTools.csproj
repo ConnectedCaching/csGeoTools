@@ -45,6 +45,13 @@
     <Compile Include="GeoPointFormat.cs" />
     <Compile Include="ImperialUnit.cs" />
     <Compile Include="MetricUnit.cs" />
+    <Compile Include="CommonModels\CacheSize.cs" />
+    <Compile Include="CommonModels\Geocache.cs" />
+    <Compile Include="CommonModels\Log.cs" />
+    <Compile Include="CommonModels\Tag.cs" />
+    <Compile Include="CommonModels\Travelbug.cs" />
+    <Compile Include="CommonModels\User.cs" />
+    <Compile Include="CommonModels\Waypoint.cs" />
     <Compile Include="Parsers\DecimalDegreeParser.cs" />
     <Compile Include="Parsers\GeoPointParser.cs" />
     <Compile Include="Parsers\Gpx\gc101\Attribute.cs" />
