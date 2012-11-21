@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using csGeoTools.Parsers.gpx.gc101;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace csGeoTools.Tests.Parsers.Gpx
                 _gpx = (csGeoTools.Parsers.gpx.gpx10.Gpx)ser.Deserialize(reader);
             }
             Assert.IsInstanceOfType(_gpx, gpxType);
+            Assert.IsInstanceOfType(_gpx.Waypoints.First().Cache.First(), typeof(Cache));
         }
     }
 }
