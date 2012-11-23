@@ -7,7 +7,7 @@ using System.Text;
 namespace csGeoTools.CommonModels
 {
     [DataContract]
-    class Geocache
+    public class Geocache
     {
         [DataMember]
         public String Id { get; set; }

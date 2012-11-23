@@ -13,5 +13,7 @@ namespace csGeoTools.CommonModels
         public int Id { get; set; }
         [DataMember]
         public String Text { get; set; }
+        [DataMember]
+        public TagType Type { get; set; }
     }
 }

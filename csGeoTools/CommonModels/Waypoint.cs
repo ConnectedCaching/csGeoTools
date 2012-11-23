@@ -15,5 +15,7 @@ namespace csGeoTools.CommonModels
         public GeoPoint Location { get; set; }
         [DataMember]
         public List<Tag> Tags { get; set; }
+        [DataMember]
+        public WaypointType Type { get; set; }
     }
 }
