@@ -24,21 +24,21 @@ namespace csGeoTools.CommonModels
         [DataMember]
         public List<Tag> Tags { get; set; }
         [DataMember]
-        public CacheSize Size;
+        public CacheSize Size { get; set; }
         [DataMember]
-        public int Difficulty;
+        public int Difficulty { get; set; }
         [DataMember]
-        public int Terrain;
+        public int Terrain { get; set; }
         [DataMember]
         public String Description { get; set; }
         [DataMember]
         public String EncodedHint { get; set; }
         [DataMember]
-        public List<Log> Logs;
+        public List<Log> Logs { get; set; }
         [DataMember]
         public List<Travelbug> Travelbugs { get; set; }
         [DataMember]
-        public bool AlreadyFound;
+        public bool AlreadyFound { get; set; }
         [DataMember]
         public bool Archived { get; set; }
         [DataMember]

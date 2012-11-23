@@ -37,6 +37,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bearing.cs" />
+    <Compile Include="CommonModels\TagType.cs" />
+    <Compile Include="CommonModels\WaypointType.cs" />
     <Compile Include="Distance.cs" />
     <Compile Include="FixedBearing.cs" />
     <Compile Include="FixedDistance.cs" />
