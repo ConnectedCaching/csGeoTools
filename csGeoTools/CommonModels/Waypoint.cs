@@ -10,7 +10,7 @@ namespace csGeoTools.CommonModels
     public class Waypoint
     {
         [DataMember]
-        public int WaypointId { get; set; }
+        public int Id { get; set; }
         [DataMember]
         public GeoPoint Location { get; set; }
         [DataMember]
