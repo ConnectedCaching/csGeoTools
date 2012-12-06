@@ -1,5 +1,7 @@
-﻿using System;
+﻿using csGeoTools.Parsers.Gpx;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
@@ -10,7 +12,18 @@ namespace csGeoTools.Parsers.gpx.gc101
     public class Log
     {
         [XmlElement("date")]
-        public String Date { get; set; }
+        public String _date { get; set; }
+        public DateTime Date
+        {
+            get
+            {
+                return DateTime.ParseExact(_date, DateFormats.KNOWN_FORMATS, DateTimeFormatInfo.InvariantInfo, DateTimeStyles.AdjustToUniversal);
+            }
+            set
+            {
+                _date = value.ToString(DateFormats.KNOWN_FORMATS.First());
+            }
+        }
         [XmlElement("type")]
         public String Type { get; set; }
         [XmlElement("finder")]

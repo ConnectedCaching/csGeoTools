@@ -1,4 +1,5 @@
-﻿using System;
+﻿using csGeoTools.Parsers.gpx.gpx10;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -26,9 +27,9 @@ namespace csGeoTools.CommonModels
         [DataMember]
         public CacheSize Size { get; set; }
         [DataMember]
-        public int Difficulty { get; set; }
+        public Double Difficulty { get; set; }
         [DataMember]
-        public int Terrain { get; set; }
+        public Double Terrain { get; set; }
         [DataMember]
         public String Description { get; set; }
         [DataMember]
@@ -43,5 +44,49 @@ namespace csGeoTools.CommonModels
         public bool Archived { get; set; }
         [DataMember]
         public bool Disabled { get; set; }
+
+        public Geocache() { }
+
+        public static List<Geocache> Parse(Gpx gpx)
+        {
+            List<Geocache> caches = new List<Geocache>();
+
+            foreach (var item in gpx.Waypoints)
+            {
+                foreach (var singleCache in item.Cache)
+                {
+                    Geocache cache = new Geocache();
+                    cache.Id = item.Name;
+                    cache.Description = item.Description;
+                    cache.Difficulty = singleCache.Difficulty;
+                    cache.Terrain = singleCache.Terrain;
+                    cache.AlreadyFound = false;
+                    cache.Archived = singleCache.Archived;
+                    cache.Disabled = singleCache.Available;
+                    cache.EncodedHint = singleCache.EncodedHints;
+                    cache.Location = GeoPoint.Parse((double)item.Latitude, (double)item.Longitude);
+                    cache.Logs = Log.Parse(singleCache.Logs);
+                    cache.Name = singleCache.Name;
+                    cache.Owner = new User()
+                    {
+                        Name = singleCache.Owner.First().Name,
+                        Id = int.Parse(singleCache.Owner.First().Id)
+                    };
+                    cache.Size = (CacheSize)Enum.Parse(typeof(CacheSize), singleCache.Container, true);
+                    cache.Travelbugs = Travelbug.Parse(singleCache.Travelbugs);
+                    cache.Url = item.Url;
+                    foreach (var attribute in singleCache.attributesField)
+                    {
+                        cache.Tags.Add(new Tag()
+                        {
+                            Type = TagType.Attribute,
+                            Text = (attribute.Inc == 1) ? attribute.Value : "not " + attribute.Value
+                        });
+                    }
+                    cache.Tags.Add(new Tag() { Type = TagType.System, Text = singleCache.Type });
+                }
+            }
+            return caches;
+        }
     }
 }

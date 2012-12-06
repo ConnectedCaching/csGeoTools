@@ -19,12 +19,13 @@ namespace csGeoTools.Parsers.gpx.gc101
         public String Type { get; set; }
         [XmlElement("container")]
         public String Container { get; set; }
+        [XmlArray("attributes")]
         [XmlArrayItem("attribute")]
         public Attribute[] attributesField { get; set; }
         [XmlElement("difficulty")]
-        public String Difficulty { get; set; }
+        public Double Difficulty { get; set; }
         [XmlElement("terrain")]
-        public String Terrain { get; set; }
+        public Double Terrain { get; set; }
         [XmlElement("country")]
         public String Country { get; set; }
         [XmlElement("state")]
@@ -35,8 +36,10 @@ namespace csGeoTools.Parsers.gpx.gc101
         public Description[] LongDescription { get; set; }
         [XmlElement("encoded_hints")]
         public String EncodedHints { get; set; }
+        [XmlArray("logs")]
         [XmlArrayItem("log")]
         public Log[] Logs { get; set; }
+        [XmlArray("travelbugs")]
         [XmlArrayItem("travelbug")]
         public Travelbug[] Travelbugs { get; set; }
         [XmlAttribute("id")]

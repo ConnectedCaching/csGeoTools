@@ -56,6 +56,7 @@
     <Compile Include="CommonModels\Waypoint.cs" />
     <Compile Include="Parsers\DecimalDegreeParser.cs" />
     <Compile Include="Parsers\GeoPointParser.cs" />
+    <Compile Include="Parsers\Gpx\DateFormats.cs" />
     <Compile Include="Parsers\Gpx\gc101\Attribute.cs" />
     <Compile Include="Parsers\Gpx\gc101\Cache.cs" />
     <Compile Include="Parsers\Gpx\gc101\Description.cs" />

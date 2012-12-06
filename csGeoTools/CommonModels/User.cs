@@ -15,5 +15,7 @@ namespace csGeoTools.CommonModels
         public String Name { get; set; }
         [DataMember]
         public String Password { get; set; }
+
+        public User() { }
     }
 }

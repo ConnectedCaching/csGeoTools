@@ -1,4 +1,5 @@
-﻿using System;
+﻿using csGeoTools.Parsers.Gpx;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -29,11 +30,11 @@ namespace csGeoTools.Parsers.gpx.gpx10
         {
             get
             {
-                return DateTime.ParseExact(_time, "yyyy-MM-dd HH':'mm':'ss 'GMT'", CultureInfo.InvariantCulture);
+                return DateTime.ParseExact(_time, DateFormats.KNOWN_FORMATS, DateTimeFormatInfo.InvariantInfo, DateTimeStyles.AdjustToUniversal);
             }
             set
             {
-                _time = value.ToString("yyyy-MM-dd HH':'mm':'ss 'GMT'");
+                _time = value.ToString(DateFormats.KNOWN_FORMATS.First());
             }
         }
         [XmlElement("keywords")]
