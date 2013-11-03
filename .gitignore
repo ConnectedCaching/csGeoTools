@@ -9,9 +9,16 @@ TestResults
 *.suo
 *.user
 *.sln.docstates
+UpgradeLog.htm
+
+# User-specific VS version upgrade folders
+Backup
 
 # NuGet Packages Directory
 [Pp]ackages/
+
+# Generated NuGet Packages
+*.nupkg
 
 ~$*
 *.exe
