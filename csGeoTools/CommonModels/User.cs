@@ -10,11 +10,11 @@ namespace csGeoTools.CommonModels
     public class User
     {
         [DataMember]
-        public int Id { get; set; }
+        public virtual int Id { get; set; }
         [DataMember]
-        public String Name { get; set; }
+        public virtual String Name { get; set; }
         [DataMember]
-        public String Password { get; set; }
+        public virtual String Password { get; set; }
 
         public User() { }
     }

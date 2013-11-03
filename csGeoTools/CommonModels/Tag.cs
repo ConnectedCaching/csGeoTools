@@ -10,11 +10,11 @@ namespace csGeoTools.CommonModels
     public class Tag
     {
         [DataMember]
-        public int Id { get; set; }
+        public virtual int Id { get; set; }
         [DataMember]
-        public String Text { get; set; }
+        public virtual String Text { get; set; }
         [DataMember]
-        public TagType Type { get; set; }
+        public virtual TagType Type { get; set; }
 
         public Tag() { }
     }

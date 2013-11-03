@@ -1,4 +1,5 @@
-﻿using csGeoTools.Parsers.gpx.gpx10;
+﻿using csGeoTools.Contracts;
+using csGeoTools.Parsers.gpx.gpx10;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,44 +9,47 @@ using System.Text;
 namespace csGeoTools.CommonModels
 {
     [DataContract]
-    public class Geocache
+    public class Geocache : IGeocache
     {
         [DataMember]
-        public String Id { get; set; }
+        public virtual String Id { get; set; }
         [DataMember]
-        public String Name { get; set; }
+        public virtual String Name { get; set; }
         [DataMember]
-        public GeoPoint Location { get; set; }
+        public virtual GeoPoint Location { get; set; }
         [DataMember]
-        public User Owner { get; set; }
+        public virtual User Owner { get; set; }
         [DataMember]
-        public String Url { get; set; }
+        public virtual String Url { get; set; }
         [DataMember]
-        public List<Waypoint> Waypoints { get; set; }
+        public virtual IList<Waypoint> Waypoints { get; set; }
         [DataMember]
-        public List<Tag> Tags { get; set; }
+        public virtual IList<Tag> Tags { get; set; }
         [DataMember]
-        public CacheSize Size { get; set; }
+        public virtual CacheSize Size { get; set; }
         [DataMember]
-        public Double Difficulty { get; set; }
+        public virtual Double Difficulty { get; set; }
         [DataMember]
-        public Double Terrain { get; set; }
+        public virtual Double Terrain { get; set; }
         [DataMember]
-        public String Description { get; set; }
+        public virtual String Description { get; set; }
         [DataMember]
-        public String EncodedHint { get; set; }
+        public virtual String EncodedHint { get; set; }
         [DataMember]
-        public List<Log> Logs { get; set; }
+        public virtual IList<Log> Logs { get; set; }
         [DataMember]
-        public List<Travelbug> Travelbugs { get; set; }
+        public virtual IList<Travelbug> Travelbugs { get; set; }
         [DataMember]
-        public bool AlreadyFound { get; set; }
+        public virtual bool AlreadyFound { get; set; }
         [DataMember]
-        public bool Archived { get; set; }
+        public virtual bool Archived { get; set; }
         [DataMember]
-        public bool Disabled { get; set; }
+        public virtual bool Disabled { get; set; }
 
-        public Geocache() { }
+        public Geocache()
+        {
+            Tags = new List<Tag>();
+        }
 
         public static List<Geocache> Parse(Gpx gpx)
         {
@@ -53,7 +57,7 @@ namespace csGeoTools.CommonModels
 
             foreach (var item in gpx.Waypoints)
             {
-                foreach (var singleCache in item.Cache)
+                foreach (var singleCache in item.Caches)
                 {
                     Geocache cache = new Geocache();
                     cache.Id = item.Name;
@@ -69,13 +73,13 @@ namespace csGeoTools.CommonModels
                     cache.Name = singleCache.Name;
                     cache.Owner = new User()
                     {
-                        Name = singleCache.Owner.First().Name,
-                        Id = int.Parse(singleCache.Owner.First().Id)
+                        Name = singleCache.Owners.First().Name,
+                        //Id = int.Parse(singleCache.Owners.First().Id)
                     };
                     cache.Size = (CacheSize)Enum.Parse(typeof(CacheSize), singleCache.Container, true);
                     cache.Travelbugs = Travelbug.Parse(singleCache.Travelbugs);
                     cache.Url = item.Url;
-                    foreach (var attribute in singleCache.attributesField)
+                    foreach (var attribute in singleCache.AttributesField)
                     {
                         cache.Tags.Add(new Tag()
                         {
@@ -84,6 +88,7 @@ namespace csGeoTools.CommonModels
                         });
                     }
                     cache.Tags.Add(new Tag() { Type = TagType.System, Text = singleCache.Type });
+                    caches.Add(cache);
                 }
             }
             return caches;

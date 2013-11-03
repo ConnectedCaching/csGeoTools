@@ -10,20 +10,21 @@ namespace csGeoTools.CommonModels
     public class Waypoint
     {
         [DataMember]
-        public int Id { get; set; }
+        public virtual int Id { get; set; }
         [DataMember]
-        public GeoPoint Location { get; set; }
+        public virtual GeoPoint Location { get; set; }
         [DataMember]
-        public List<Tag> Tags { get; set; }
+        public virtual List<Tag> Tags { get; set; }
         [DataMember]
-        public WaypointType Type { get; set; }
+        public virtual WaypointType Type { get; set; }
 
         public Waypoint() { }
 
-        internal static List<Waypoint> Parse(Parsers.gpx.gc101.LogWaypoint[] logWaypoint)
+        internal static List<Waypoint> Parse(Parsers.gpx.gc101.LogWaypoint[] logWaypoints)
         {
             List<Waypoint> waypoints = new List<Waypoint>();
-            foreach (var item in logWaypoint)
+            if (logWaypoints == null || logWaypoints.Count() == 0) return waypoints;
+            foreach (var item in logWaypoints)
             {
                 waypoints.Add(new Waypoint()
                 {

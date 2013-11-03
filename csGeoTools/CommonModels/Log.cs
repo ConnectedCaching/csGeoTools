@@ -10,23 +10,24 @@ namespace csGeoTools.CommonModels
     public class Log
     {
         [DataMember]
-        public int Id { get; set; }
+        public virtual int Id { get; set; }
         [DataMember]
-        public DateTime Date { get; set; }
+        public virtual DateTime Date { get; set; }
         [DataMember]
-        public String Type { get; set; }
+        public virtual String Type { get; set; }
         [DataMember]
-        public User Author { get; set; }
+        public virtual User Author { get; set; }
         [DataMember]
-        public String Text { get; set; }
+        public virtual String Text { get; set; }
         [DataMember]
-        public List<Waypoint> Waypoints { get; set; }
+        public virtual List<Waypoint> Waypoints { get; set; }
 
         public Log() { }
 
         internal static List<Log> Parse(Parsers.gpx.gc101.Log[] logs)
         {
             List<Log> parsedLogs = new List<Log>();
+            if (logs == null || logs.Count() == 0) return parsedLogs;
             foreach (var item in logs)
             {
                 parsedLogs.Add(new Log()

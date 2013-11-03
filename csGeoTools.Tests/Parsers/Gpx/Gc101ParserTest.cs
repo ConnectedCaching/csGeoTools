@@ -23,7 +23,7 @@ namespace csGeoTools.Tests.Parsers.Gpx
                 _gpx = (csGeoTools.Parsers.gpx.gpx10.Gpx)ser.Deserialize(reader);
             }
             Assert.IsInstanceOfType(_gpx, gpxType);
-            Assert.IsInstanceOfType(_gpx.Waypoints.First().Cache.First(), typeof(Cache));
+            Assert.IsInstanceOfType(_gpx.Waypoints.First().Cache, typeof(Cache));
         }
     }
 }
