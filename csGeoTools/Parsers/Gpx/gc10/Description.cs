@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace csGeoTools.Parsers.gpx.gc101
+namespace csGeoTools.Parsers.gpx.gc10
 {
-    [XmlTypeAttribute(Namespace = "http://www.groundspeak.com/cache/1/0/1")]
+    [XmlTypeAttribute(Namespace = "http://www.groundspeak.com/cache/1/0")]
     public class Description
     {
         [XmlAttribute("html")]

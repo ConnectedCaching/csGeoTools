@@ -62,7 +62,14 @@ namespace csGeoTools.Parsers.gpx.gpx10
         [XmlElement("dgpsid")]
         public int DifferentialGpsId { get; set; }
         [XmlElement("cache", Namespace = "http://www.groundspeak.com/cache/1/0/1")]
-        public Cache[] Cache { get; set; }
+        public Cache[] Caches { get; set; }
+        public Cache Cache
+        {
+            get
+            {
+                return Caches.First();
+            }
+        }
         [XmlAttribute("lat")]
         public decimal Latitude { get; set; }
         [XmlAttribute("lon")]
