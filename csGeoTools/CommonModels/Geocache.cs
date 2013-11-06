@@ -1,4 +1,4 @@
-﻿using csGeoTools.Contracts;
+﻿using csGeoTools.ModelsBase;
 using csGeoTools.Parsers.gpx.gpx10;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Text;
 namespace csGeoTools.CommonModels
 {
     [DataContract]
-    public class Geocache : IGeocache
+    public class Geocache : GeocacheBase
     {
         [DataMember]
         public virtual String Id { get; set; }

@@ -1,4 +1,4 @@
-﻿using csGeoTools.Contracts;
+﻿using csGeoTools.ModelsBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 namespace csGeoTools.Parsers.gpx.gc101
 {
     [XmlTypeAttribute(Namespace = "http://www.groundspeak.com/cache/1/0/1")]
-    public class Cache : IGeocache
+    public class Cache : GeocacheBase
     {
         [XmlElement("name")]
         public String Name { get; set; }

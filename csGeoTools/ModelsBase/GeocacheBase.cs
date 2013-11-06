@@ -6,7 +6,7 @@ using System.Text;
 
 namespace csGeoTools.ModelsBase
 {
-    abstract class GeocacheBase
+    public abstract class GeocacheBase
     {
         String Id;
         String Name;
