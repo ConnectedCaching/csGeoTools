@@ -20,8 +20,8 @@ namespace csGeoTools.Tests
         public void Computation_ReturnsCorrectResults()
         {
             Assert.AreEqual(p1.InitialBearingTo(p2), p1.BearingTo(p2));
-            Assert.AreEqual(259.4343762289729, p1.BearingTo(p2).DecimalDegrees());
             double tolerance = 1E-13;
+            Assert.AreEqual(259.4343762289729, p1.BearingTo(p2).DecimalDegrees(), tolerance);
             Assert.AreEqual(254.17629278737843, p1.FinalBearingTo(p2).DecimalDegrees(), tolerance);
         }
 
