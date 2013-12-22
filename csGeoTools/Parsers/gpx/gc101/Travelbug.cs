@@ -9,6 +9,7 @@ namespace csGeoTools.Parsers.gpx.gc101
     [XmlTypeAttribute(Namespace = "http://www.groundspeak.com/cache/1/0/1")]
     public class Travelbug
     {
+        [XmlAttribute("name")]
         public String Name { get; set; }
         [XmlAttribute("id")]
         public String Id { get; set; }
