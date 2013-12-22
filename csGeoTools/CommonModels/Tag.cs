@@ -7,7 +7,7 @@ using System.Text;
 namespace csGeoTools.CommonModels
 {
     [DataContract]
-    public class Tag : IComparable<Tag>
+    public class Tag : IEquatable<Tag>
     {
         [DataMember]
         public virtual int Id { get; set; }
@@ -18,11 +18,9 @@ namespace csGeoTools.CommonModels
 
         public Tag() { }
 
-        public virtual int CompareTo(Tag other)
+        public virtual new bool Equals(Tag other)
         {
-            if (this.Type == other.Type && this.Text.Equals(other.Text))
-                return 0;
-            return -1;
+            return (this.Type == other.Type && this.Text.Equals(other.Text));
         }
     }
 }
